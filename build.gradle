@@ -3,12 +3,16 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath 'com.android.tools.build:gradle:2.3.3'
     }
 }
 
 allprojects {
     repositories {
         mavenCentral()
+        maven {
+            // a new home for the support library..
+            url "https://maven.google.com"
+        }
     }
 }
